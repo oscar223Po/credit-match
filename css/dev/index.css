@@ -528,7 +528,7 @@ body {
 .stat-hero__decor--03 {
   width: 7.5rem;
   filter: blur(2.1875rem);
-  animation: decor-translate-plus 4s infinite linear;
+  animation: decor-translate-plus 7s infinite linear;
   background: linear-gradient(90deg, #35d0e4 0%, #6721e0 100%);
 }
 @keyframes decor-translate-minus {
