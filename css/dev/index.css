@@ -634,8 +634,6 @@ body {
   width: 90%;
 }
 .work {
-  z-index: -2;
-  position: relative;
   border-top: 0.0625rem solid #402c72;
   border-bottom: 0.0625rem solid #402c72;
 }
@@ -869,6 +867,9 @@ body {
     100% {
       translate: 0 -150%;
     }
+  }
+  .work {
+    border-top: none;
   }
 }
 @media (max-width: 47.99875em){
