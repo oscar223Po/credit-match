@@ -27,6 +27,15 @@
     fetch(link.href, fetchOpts);
   }
 })();
+function addLoadedAttr() {
+  if (!document.documentElement.hasAttribute("data-fls-preloader-loading")) {
+    window.addEventListener("load", function() {
+      setTimeout(function() {
+        document.documentElement.setAttribute("data-fls-loaded", "");
+      }, 0);
+    });
+  }
+}
 let slideUp = (target, duration = 500, showmore = 0) => {
   if (!target.classList.contains("--slide")) {
     target.classList.add("--slide");
@@ -432,3 +441,4 @@ class ScrollWatcher {
   }
 }
 document.querySelector("[data-fls-watcher]") ? window.addEventListener("load", () => new ScrollWatcher({})) : null;
+addLoadedAttr();
