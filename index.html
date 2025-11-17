@@ -4,31 +4,34 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/logo.svg">
-		<title>Landing — Credit Match</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1763214173240"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1763214173240">
+		<title>CreditMatch</title>
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1763384407220"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1763384407220">
 	</head>
 	<body>
 		<div class="wrapper">
 			<header data-fls-header="" data-fls-header-scroll="" class="header">
 				<div class="header__container">
-					<a href="" class="header__logo">
+					<a href="" data-fls-scrollto=".hero" class="header__logo">
 						<img src="./assets/img/logo.svg" alt="Logo">
-						<span>Кредитный Матч</span>
+						<span>CreditMatch</span>
 					</a>
-					<div class="header__actions">
-						<ul class="header__list">
-							<li>
-								<a href="" class="header__link">Процесс</a>
-							</li>
-							<li>
-								<a href="" class="header__link">О нас</a>
-							</li>
-						</ul>
-						<a href="" data-fls-button="" class="header__button button button--small button--icon-arrow">
-							<span>Подать заявку сейчас</span>
-						</a>
-					</div>
+					<b>
+						МОЙ LINKEDIN:
+						<a style="color: greenyellow;" href="https://www.linkedin.com/in/zhantaev-oscar-a5a2a7259">ССЫЛКА</a>
+					</b>
+					<b>
+						МОЙ TELEGRAM:
+						<a style="color: greenyellow;" href="https://t.me/svyourself">ССЫЛКА</a>
+					</b>
+					<ul class="header__list">
+						<li>
+							<a href="" data-fls-scrollto=".work" data-fls-scrollto-header="" class="header__link">Процесс кредитования</a>
+						</li>
+						<li>
+							<a href="" data-fls-scrollto=".about" data-fls-scrollto-header="" class="header__link">О нас</a>
+						</li>
+					</ul>
 					<!-- <include src="@components/layout/menu/menu.html" locals='{"active":"Home"}'></include> -->
 				</div>
 			</header>
@@ -37,7 +40,7 @@
 					<div class="hero__container">
 						<div class="hero__aside aside-hero">
 							<div data-fls-blockhead="" class="aside-hero__blockhead blockhead">
-								<div data-fls-watcher="" data-fls-watcher-once="" class="blockhead__label blockhead__label--star">Иновации в мобильных играх</div>
+								<div data-fls-watcher="" data-fls-watcher-once="" class="blockhead__label blockhead__label--star">Инновации в кредитовании</div>
 								<h1 data-fls-watcher="" data-fls-watcher-once="" class="blockhead__title blockhead__title--68">
 									<span>Найдите свой</span>
 									идеальный кредит
@@ -52,13 +55,13 @@
 							</div>
 							<div data-fls-watcher="" data-fls-watcher-once="" class="aside-hero__actions">
 								<a href="" data-fls-button="" class="aside-hero__button button button--icon-arrow">
-									<span>Начало работы</span>
+									<span>Подать заявку сейчас</span>
 								</a>
 								<a href="" data-fls-button="" class="aside-hero__button button button--border">Дополнительно</a>
 							</div>
 							<div data-fls-watcher="" data-fls-watcher-once="" class="aside-hero__items">
 								<div class="aside-hero__item">
-									<div data-fls-digcounter="" class="aside-hero__label-item aside-hero__label-item--01">98</div>
+									<div data-fls-digcounter="" class="aside-hero__label-item aside-hero__label-item--01">99</div>
 									<div class="aside-hero__text-item">Удовлетворенность</div>
 								</div>
 								<div class="aside-hero__item">
@@ -66,7 +69,7 @@
 									<div class="aside-hero__text-item">Кредитов</div>
 								</div>
 								<div class="aside-hero__item">
-									<div data-fls-digcounter="" class="aside-hero__label-item aside-hero__label-item--03">24</div>
+									<div data-fls-digcounter="" class="aside-hero__label-item aside-hero__label-item--03">5</div>
 									<div class="aside-hero__text-item">Утверждение</div>
 								</div>
 							</div>
@@ -80,7 +83,7 @@
 										<div class="stat-hero__total-head">CreditMatch</div>
 									</div>
 								</div>
-								<form data-fls-form="" action="#" class="stat-hero__form form">
+								<form data-fls-form="ajax" data-fls-popup-link="send-form" action="/sendmail" class="stat-hero__form form">
 									<select name="form[]" data-fls-select="" data-fls-select-modif="form">
 										<option value="" selected>Цель кредита</option>
 										<option value="1">Потребительский</option>
@@ -89,7 +92,7 @@
 									</select>
 									<input data-fls-input="" required autocomplete="off" type="name" name="name" data-error="Error" placeholder="ФИО" class="form__input input">
 									<input data-fls-input="" required autocomplete="off" type="text" name="number" data-error="Error" placeholder="Желаемую сумму" class="form__input input">
-									<input data-fls-input="" data-fls-input-mask="+375-99-9999999" required autocomplete="off" type="tel" name="tel" data-error="Error" placeholder="Номер телефона" class="form__input input">
+									<input data-fls-input="" required data-fls-input-mask="+375-99-9999999" autocomplete="off" type="tel" name="tel" data-error="Error" placeholder="Номер телефона" class="form__input input">
 									<button data-fls-button="" type="submit" class="form__button button button--fw">
 										<span>Оформить</span>
 									</button>
@@ -117,10 +120,12 @@
 </div>
 -->
 							</div>
-							<!-- Decors -->
-							<div class="stat-hero__decor stat-hero__decor--01"></div>
-							<div class="stat-hero__decor stat-hero__decor--02"></div>
-							<div class="stat-hero__decor stat-hero__decor--03"></div>
+							<!--
+Decors
+<div class="stat-hero__decor stat-hero__decor--01"></div>
+<div class="stat-hero__decor stat-hero__decor--02"></div>
+<div class="stat-hero__decor stat-hero__decor--03"></div>
+-->
 						</div>
 					</div>
 				</section>
@@ -238,11 +243,11 @@
 								<div class="baner-about__span">Кредиты совпадают</div>
 							</div>
 							<div class="baner-about__item">
-								<div data-fls-digcounter="" class="baner-about__label baner-about__label--02">100</div>
+								<div data-fls-digcounter="" class="baner-about__label baner-about__label--02">10</div>
 								<div class="baner-about__span">Кредиторы-партнеры</div>
 							</div>
 							<div class="baner-about__item">
-								<div data-fls-digcounter="" class="baner-about__label baner-about__label--03">98</div>
+								<div data-fls-digcounter="" class="baner-about__label baner-about__label--03">99</div>
 								<div class="baner-about__span">Уровень удовлетворенности</div>
 							</div>
 						</div>
@@ -252,56 +257,38 @@
 			<footer data-fls-footer="" class="footer">
 				<div class="footer__container">
 					<div class="footer__main main-footer">
-						<div class="main-footer__main">
-							<a href="" class="main-footer__logo">
-								<img src="./assets/img/logo.svg" alt="Logo">
-								<span>Кредитный Матч</span>
-							</a>
-							<div class="main-footer__text text">
-								<p>Подключение заемщиков с правильными кредиторами.</p>
-							</div>
-						</div>
-						<div data-fls-spollers="767.98" class="main-footer__spollers spollers">
-							<details class="spollers__item">
-								<summary class="spollers__title">Товар</summary>
-								<ul class="spollers__list">
+						<a href="" data-fls-scrollto=".hero" class="main-footer__logo">
+							<img src="./assets/img/logo.svg" alt="Logo">
+							<span>CreditMatch</span>
+						</a>
+						<div data-fls-spollers="767.98" data-fls-spollers-one="" class="main-footer__spollers spollers-footer">
+							<details data-fls-spollers-open="" class="spollers-footer__item">
+								<summary class="spollers-footer__title">Услуги</summary>
+								<ul class="spollers-footer__list">
 									<li>
-										<a href="" class="spollers__link">Процесс кредитования</a>
+										<a href="" data-fls-scrollto=".work" data-fls-scrollto-header="" class="spollers-footer__link">Процесс кредитования</a>
 									</li>
-									<li>
-										<a href="" class="spollers__link">Типы кредитов</a>
-									</li>
-									<li>
-										<a href="" class="spollers__link">Ответы на вопросы</a>
-									</li>
+									<button data-fls-popup-link="type" type="button" class="spollers-footer__link">Типы кредитов</button>
+									<button data-fls-popup-link="faq" type="button" class="spollers-footer__link">Ответы на
+							вопросы</button>
 								</ul>
 							</details>
-							<details class="spollers__item">
-								<summary class="spollers__title">Компания</summary>
-								<ul class="spollers__list">
+							<details class="spollers-footer__item">
+								<summary class="spollers-footer__title">Компания</summary>
+								<ul class="spollers-footer__list">
 									<li>
-										<a href="" class="spollers__link">О нас</a>
+										<a href="" data-fls-scrollto=".about" data-fls-scrollto-header="" class="spollers-footer__link">О нас</a>
 									</li>
-									<li>
-										<a href="" class="spollers__link">Крнтактные данные</a>
-									</li>
-									<li>
-										<a href="" class="spollers__link">Карьера в Creditmatch</a>
-									</li>
+									<button data-fls-popup-link="contact" type="button" class="spollers-footer__link">Контактные
+							данные</button>
+									<button data-fls-popup-link="career" type="button" class="spollers-footer__link">Карьера</button>
 								</ul>
 							</details>
-							<details class="spollers__item">
-								<summary class="spollers__title">Юридические</summary>
-								<ul class="spollers__list">
-									<li>
-										<a href="" class="spollers__link">Конфиденциальность</a>
-									</li>
-									<li>
-										<a href="" class="spollers__link">Условия</a>
-									</li>
-									<li>
-										<a href="" class="spollers__link">Куки-файлы</a>
-									</li>
+							<details class="spollers-footer__item">
+								<summary class="spollers-footer__title">Юридические</summary>
+								<ul class="spollers-footer__list">
+									<button data-fls-popup-link="condition" type="button" class="spollers-footer__link">Условия</button>
+									<button data-fls-popup-link="privacy" type="button" class="spollers-footer__link">Конфиденциальность</button>
 								</ul>
 							</details>
 						</div>
@@ -310,29 +297,347 @@
 						<div class="copy-footer__text">© 2025 CreditMatch. Все права защищены.</div>
 						<ul class="copy-footer__list">
 							<li>
-								<a href="" class="copy-footer__link">Twitter</a>
+								<a href="https://www.facebook.com/" target="_blank" class="copy-footer__link">Facebook</a>
 							</li>
 							<li>
-								<a href="" class="copy-footer__link">LinkedIn</a>
+								<a href="https://www.linkedin.com/" target="_blank" class="copy-footer__link">LinkedIn</a>
 							</li>
 							<li>
-								<a href="" class="copy-footer__link">Instagram</a>
+								<a href="https://www.instagram.com/" target="_blank" class="copy-footer__link">Instagram</a>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</footer>
 		</div>
-		<div data-fls-popup="send" aria-hidden="true" class="popup">
+		<!-- Type -->
+		<div data-fls-popup="type" aria-hidden="true" class="popup">
 			<div data-fls-popup-wrapper="" class="popup__wrapper">
-				<div data-fls-popup-body="" class="popup__body">
-					<button data-fls-popup-close="" type="button" class="popup__close">
-						<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square"></path>
-							<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square"></path>
-						</svg>
-					</button>
-					<div data-fls-popup-content="" class="popup__text"><!-- Запрос Отправлен --></div>
+				<div data-fls-popup-body="" class="popup__body type-popup">
+					<div data-fls-popup-head="" class="popup__head">
+						<h2 data-fls-popup-title="" class="popup__title">Типы кредитов</h2>
+						<button data-fls-popup-close="" type="button" class="popup__close">
+							<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#fff" stroke-linecap="square"></path>
+								<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#fff" stroke-linecap="square"></path>
+							</svg>
+						</button>
+					</div>
+					<div data-fls-popup-content="" class="type-popup__body">
+						<div data-fls-blockhead="" class="type-popup__blockhead blockhead">
+							<h1 data-fls-watcher="" data-fls-watcher-once="" class="blockhead__title blockhead__title--fire blockhead__title--32">
+								<span>Потребительский кредит</span>
+								— для ваших целей и желаний
+							</h1>
+							<div data-fls-watcher="" data-fls-watcher-once="" class="blockhead__text text text--18">
+								<p>
+									Получите финансирование на любые ваши планы: от долгожданного отпуска и крупной покупки до ремонта
+							в квартире. Наш потребительский кредит — это простое и быстрое решение, когда нужны деньги здесь и
+							сейчас. Мы предлагаем гибкие условия и конкурентные ставки, чтобы вы могли реализовать задуманное
+							без лишних хлопот и долгого ожидания. Подайте заявку онлайн и узнайте решение за несколько минут.
+								</p>
+							</div>
+						</div>
+						<div data-fls-blockhead="" class="type-popup__blockhead blockhead">
+							<h1 data-fls-watcher="" data-fls-watcher-once="" class="blockhead__title blockhead__title--fire blockhead__title--32">
+								<span>Автокредит</span>
+								— выберите автомобиль своей мечты на выгодных условиях
+							</h1>
+							<div data-fls-watcher="" data-fls-watcher-once="" class="blockhead__text text text--18">
+								<p>
+									Мечтаете о новом или подержанном автомобиле? Наш автокредит поможет вам сесть за руль желаемой
+							модели без необходимости копить годами. Мы сотрудничаем с ведущими дилерами, чтобы предложить вам
+							специальные программы и низкие ставки. Минимальный пакет документов и быстрое рассмотрение заявки
+							позволят вам стать владельцем машины всего за несколько дней. Прозрачные условия без скрытых
+							комиссий — ваша уверенность в выборе.
+								</p>
+							</div>
+						</div>
+						<div data-fls-blockhead="" class="type-popup__blockhead blockhead">
+							<h1 data-fls-watcher="" data-fls-watcher-once="" class="blockhead__title blockhead__title--fire blockhead__title--32">
+								<span>Рефинансирование</span>
+								— объедините долги и экономьте
+							</h1>
+							<div data-fls-watcher="" data-fls-watcher-once="" class="blockhead__text text text--18">
+								<p>
+									Чувствуете, что кредиты тянут вас вниз? Кредит на рефинансирование от CreditMatch — это умный
+							финансовый инструмент, который позволяет объединить несколько ваших кредитов в один. В результате
+							вы получаете одну удобную дату платежа и, что главное, значительно снижаете ежемесячную финансовую
+							нагрузку за счет уменьшения общего процента. Возьмите под контроль свои финансы, продлите срок
+							кредита и дышите свободнее.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- FAQ -->
+		<div data-fls-popup="faq" aria-hidden="true" class="popup">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body faq-popup">
+					<div data-fls-popup-head="" class="popup__head">
+						<h2 data-fls-popup-title="" class="popup__title">Ответы на вопросы</h2>
+						<button data-fls-popup-close="" type="button" class="popup__close">
+							<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#fff" stroke-linecap="square"></path>
+								<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#fff" stroke-linecap="square"></path>
+							</svg>
+						</button>
+					</div>
+					<div data-fls-spollers="" data-fls-spollers-one="" class="faq-popup__spollers spollers">
+						<details data-fls-spollers-open="" class="spollers__item">
+							<summary class="spollers__title">Чем CreditMatch отличается от банка?</summary>
+							<div class="spollers__text text text--18">
+								Мы не банк. Мы — умный посредник. Наша платформа анализирует ваши данные и подбирает лучшие кредитные
+						предложения от множества банков-партнеров, экономя ваше время и увеличивая вероятность одобрения.
+							</div>
+						</details>
+						<details class="spollers__item">
+							<summary class="spollers__title">Это бесплатно для клиентов?</summary>
+							<div class="spollers__text text text--18">
+								Да, для клиентов наш сервис полностью бесплатный. Мы работаем по партнерской модели с банками.
+							</div>
+						</details>
+						<details class="spollers__item">
+							<summary class="spollers__title">Сколько времени занимает рассмотрение заявки?</summary>
+							<div class="spollers__text text text--18">
+								Благодаря автоматизированному скорингу, предварительное решение по вашей заявке вы получите в течение
+						нескольких минут.
+							</div>
+						</details>
+						<details class="spollers__item">
+							<summary class="spollers__title">Какие данные нужны для получения кредита?</summary>
+							<div class="spollers__text text text--18">
+								Для анализа мы запрашиваем минимальный набор данных: Тип кредита, Ваше ФИО, Номер мобильного телефона,
+						согласие на предоставление данных по вам как физическому лицу из кредитного реестра.
+							</div>
+						</details>
+						<details class="spollers__item">
+							<summary class="spollers__title">Безопасно ли передавать вам свою информацию?</summary>
+							<div class="spollers__text text text--18">
+								Да. Безопасность данных — наш приоритет. Мы используем банковское шифрование, сертификаты соответствия
+						и не передаем вашу информацию третьим лицам без вашего явного согласия. Подробнее — в разделе
+						«Конфиденциальность».
+							</div>
+						</details>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Contact -->
+		<div data-fls-popup="contact" aria-hidden="true" class="popup">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body contact-popup">
+					<div data-fls-popup-head="" class="popup__head">
+						<h2 data-fls-popup-title="" class="popup__title">Контактные данные</h2>
+						<button data-fls-popup-close="" type="button" class="popup__close">
+							<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#fff" stroke-linecap="square"></path>
+								<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#fff" stroke-linecap="square"></path>
+							</svg>
+						</button>
+					</div>
+					<div class="contact-popup__items">
+						<div class="contact-popup__item">
+							<div class="contact-popup__label-item">Для предпринимателей:</div>
+							<div class="contact-popup__puncts-item">
+								<div class="contact-popup__punct-item">
+									Электронная почта:
+									<a href="mailto:partners@creditmatch.by">partners@creditmatch.by</a>
+								</div>
+								<div class="contact-popup__punct-item">
+									Телефон:
+									<a href="tel:+375255401286">+375255401286</a>
+								</div>
+								<div class="contact-popup__punct-item">
+									Часы работы:
+									<span>Пн-Пт: 9:00 - 18:00</span>
+								</div>
+							</div>
+						</div>
+						<div class="contact-popup__item">
+							<div class="contact-popup__label-item">Для банков-партнеров:</div>
+							<div class="contact-popup__puncts-item">
+								<div class="contact-popup__punct-item">
+									Электронная почта:
+									<a href="mailto:banks@creditmatch.by">banks@creditmatch.by</a>
+								</div>
+								<div class="contact-popup__punct-item">
+									Телефон:
+									<a href="tel:+375295476827">+375295476827</a>
+								</div>
+							</div>
+						</div>
+						<div class="contact-popup__item">
+							<div class="contact-popup__label-item">Общие вопросы и пресса:</div>
+							<div class="contact-popup__puncts-item">
+								<div class="contact-popup__punct-item">
+									Электронная почта:
+									<a href="mailto:info@creditmatch.by">info@creditmatch.by</a>
+								</div>
+							</div>
+						</div>
+						<div class="contact-popup__item">
+							<div class="contact-popup__label-item">Юридический адрес:</div>
+							<div class="contact-popup__puncts-item">
+								<div class="contact-popup__punct-item">ООО «Третьяк Ритейл» УПН 193630814</div>
+								<div class="contact-popup__punct-item">220061, Беларусь, Минск, пр. Победителей 141. пом.3</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Career -->
+		<div data-fls-popup="career" aria-hidden="true" class="popup">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body career-popup">
+					<div data-fls-popup-head="" class="popup__head">
+						<h2 data-fls-popup-title="" class="popup__title">Карьера</h2>
+						<button data-fls-popup-close="" type="button" class="popup__close">
+							<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#fff" stroke-linecap="square"></path>
+								<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#fff" stroke-linecap="square"></path>
+							</svg>
+						</button>
+					</div>
+					<div class="career-popup__body">
+						<div data-fls-blockhead="" class="career-popup__blockhead blockhead">
+							<h1 data-fls-watcher="" data-fls-watcher-once="" class="blockhead__title blockhead__title--fire blockhead__title--32">
+								<span>Мы оздаём технологию,</span>
+								которая меняет правила игры
+							</h1>
+							<div data-fls-watcher="" data-fls-watcher-once="" class="blockhead__text text text--18">
+								<p>
+									Мы не просто выдаём кредиты. Мы строим интеллектуальную платформу, которая делает финансирование
+							малого и среднего бизнеса простым, быстрым и справедливым. Если вы хотите, чтобы ваш код и ваши
+							идеи имели реальное, осязаемое влияние — вам сюда.Что мы предлагаем:
+								</p>
+							</div>
+						</div>
+						<ol class="career-popup__list">
+							<li class="career-popup__item-list">Достойную конкурентоспособную зарплату.</li>
+							<li class="career-popup__item-list">Гибкий график и гибридный формат работы (удаленная работа).</li>
+							<li class="career-popup__item-list">Профессиональное развитие: конференции, курсы, корпоративная библиотека.</li>
+							<li class="career-popup__item-list">Молодую, энергичную команду и атмосферу, в которой хочется творить.</li>
+						</ol>
+						<form data-fls-form="" action="#" class="career-popup__form form">
+							<select name="form[]" data-fls-select="" data-fls-select-modif="form">
+								<option value="" selected>Цель кредита</option>
+								<option value="1">Потребительский</option>
+								<option value="2">Авто</option>
+								<option value="3">Рефинансирование</option>
+							</select>
+							<input data-fls-input="" required autocomplete="off" type="name" name="name" data-error="Error" placeholder="ФИО" class="form__input input">
+							<input data-fls-input="" required autocomplete="off" type="text" name="number" data-error="Error" placeholder="Желаемую сумму" class="form__input input">
+							<input data-fls-input="" data-fls-input-mask="+375-99-9999999" required autocomplete="off" type="tel" name="tel" data-error="Error" placeholder="Номер телефона" class="form__input input">
+							<button data-fls-button="" type="submit" class="form__button button button--fw">
+								<span>Оформить</span>
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Condition -->
+		<div data-fls-popup="condition" aria-hidden="true" class="popup">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body condition-popup">
+					<div data-fls-popup-head="" class="popup__head">
+						<h2 data-fls-popup-title="" class="popup__title">Условия</h2>
+						<button data-fls-popup-close="" type="button" class="popup__close">
+							<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#fff" stroke-linecap="square"></path>
+								<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#fff" stroke-linecap="square"></path>
+							</svg>
+						</button>
+					</div>
+					<div data-fls-blockhead="" class="condition-popup__blockhead blockhead">
+						<h1 data-fls-watcher="" data-fls-watcher-once="" class="blockhead__title blockhead__title--fire blockhead__title--32">
+							Условия использования сервиса
+							<span>CreditMatch</span>
+						</h1>
+						<div data-fls-watcher="" data-fls-watcher-once="" class="blockhead__text text text--18">
+							<p>
+								Условия предоставления услуг: Сервис предоставляется "как есть". Мы не гарантируем одобрение кредита
+						банком, так как окончательное решение остается за кредитной организацией.
+							</p>
+							<p>
+								Обязанности пользователя: Вы обязуетесь предоставлять достоверную и актуальную информацию. Вы несете
+						ответственность за конфиденциальность данных для входа в ваш аккаунт.
+							</p>
+							<p>
+								Интеллектуальная собственность: Все права на платформу, алгоритмы и контент принадлежат CreditMatch.
+							</p>
+							<p>
+								Ограничение ответственности: CreditMatch не несет ответственности за убытки, возникшие в результате
+						использования или невозможности использования сервиса, а также в связи с решениями, принятыми
+						банками-партнерами.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Privacy -->
+		<div data-fls-popup="privacy" aria-hidden="true" class="popup">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body privacy-popup">
+					<div data-fls-popup-head="" class="popup__head">
+						<h2 data-fls-popup-title="" class="popup__title">Конфиденциальность</h2>
+						<button data-fls-popup-close="" type="button" class="popup__close">
+							<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#fff" stroke-linecap="square"></path>
+								<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#fff" stroke-linecap="square"></path>
+							</svg>
+						</button>
+					</div>
+					<ul class="privacy-popup__list">
+						<li class="privacy-popup__item">
+							<span>Компания CreditMatch:</span>
+							обязуется защищать вашу конфиденциальность. Настоящая Политика
+					объясняет, как мы
+					собираем, используем, раскрываем и защищаем вашу персональную и финансовую информацию. Сбор данных: Мы
+					собираем только те данные, которые необходимы для предоставления наших услуг: идентификационная
+					информация, финансовые и операционные данные вашего бизнеса.
+						</li>
+						<li class="privacy-popup__item">
+							<span>Использование данных:</span>
+							мы используем данные исключительно для анализа кредитоспособности и
+					формирования вашего кредитного рейтинга. Подбора и предоставления вам актуальных кредитных
+					предложений. Улучшения работы нашего сервиса.
+						</li>
+						<li class="privacy-popup__item">
+							<span>Передача данных:</span>
+							Мы передаем вашу информацию банкам-партнерам только с вашего прямого
+					согласия,
+					выраженного действием (отправкой заявки на конкретный продукт).
+						</li>
+						<li class="privacy-popup__item">
+							<span>Безопасность:</span>
+							Мы применяем современные меры безопасности, включая шифрование (SSL/TLS),
+					чтобы защитить
+					ваши данные от несанкционированного доступа.
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- Send Form -->
+		<div data-fls-popup="send-form" aria-hidden="true" class="popup">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body send-popup">
+					<div data-fls-popup-head="" class="popup__head">
+						<h2 data-fls-popup-title="" class="popup__title">Форма отправки</h2>
+						<button data-fls-popup-close="" type="button" class="popup__close">
+							<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#fff" stroke-linecap="square"></path>
+								<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#fff" stroke-linecap="square"></path>
+							</svg>
+						</button>
+					</div>
+					<div class="send-popup__title">Заявка успешно отправлена</div>
 				</div>
 			</div>
 		</div>
