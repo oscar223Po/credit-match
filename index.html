@@ -5,8 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/logo.svg">
 		<title>CreditMatch</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1763399153293"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1763399153293">
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1763407937052"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1763407937052">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -75,12 +75,13 @@
 										<div class="stat-hero__total-head">CreditMatch</div>
 									</div>
 								</div>
-								<form data-fls-form="ajax" data-fls-popup-link="send-form" action="/sendmail" class="stat-hero__form form">
-									<select name="form[]" data-fls-select="" data-fls-select-modif="form">
+								<form data-fls-form="" action="https://api.web3forms.com/submit" method="POST" class="stat-hero__form form">
+									<input type="hidden" name="access_key" value="">
+									<select name="goal" data-fls-select="" data-fls-select-modif="form" required>
 										<option value="" selected>Цель кредита</option>
-										<option value="1">Потребительский</option>
-										<option value="2">Авто</option>
-										<option value="3">Рефинансирование</option>
+										<option value="Потребительский">Потребительский</option>
+										<option value="Авто">Авто</option>
+										<option value="Рефинансирование">Рефинансирование</option>
 									</select>
 									<input data-fls-input="" required autocomplete="off" type="name" name="name" data-error="Error" placeholder="ФИО" class="form__input input">
 									<input data-fls-input="" required autocomplete="off" type="text" name="number" data-error="Error" placeholder="Желаемую сумму" class="form__input input">
@@ -277,8 +278,9 @@
 							<details class="spollers-footer__item">
 								<summary class="spollers-footer__title">Юридические</summary>
 								<ul class="spollers-footer__list">
-									<button data-fls-popup-link="condition" type="button" class="spollers-footer__link">Условия</button>
 									<button data-fls-popup-link="privacy" type="button" class="spollers-footer__link">Конфиденциальность</button>
+									<button data-fls-popup-link="condition" type="button" class="spollers-footer__link">Условия</button>
+									<button data-fls-popup-link="cookie" type="button" class="spollers-footer__link">Cookie-Файлы</button>
 								</ul>
 							</details>
 						</div>
@@ -315,10 +317,10 @@
 					</div>
 					<div data-fls-popup-content="" class="type-popup__body">
 						<div data-fls-blockhead="" class="type-popup__blockhead blockhead">
-							<h1 data-fls-watcher="" data-fls-watcher-once="" class="blockhead__title blockhead__title--fire blockhead__title--32">
+							<h4 data-fls-watcher="" data-fls-watcher-once="" class="blockhead__title blockhead__title--fire blockhead__title--32">
 								<span>Потребительский кредит</span>
 								— для ваших целей и желаний
-							</h1>
+							</h4>
 							<div data-fls-watcher="" data-fls-watcher-once="" class="blockhead__text text text--18">
 								<p>
 									Получите финансирование на любые ваши планы: от долгожданного отпуска и крупной покупки до ремонта
@@ -329,10 +331,10 @@
 							</div>
 						</div>
 						<div data-fls-blockhead="" class="type-popup__blockhead blockhead">
-							<h1 data-fls-watcher="" data-fls-watcher-once="" class="blockhead__title blockhead__title--fire blockhead__title--32">
+							<h4 data-fls-watcher="" data-fls-watcher-once="" class="blockhead__title blockhead__title--fire blockhead__title--32">
 								<span>Автокредит</span>
 								— выберите автомобиль своей мечты на выгодных условиях
-							</h1>
+							</h4>
 							<div data-fls-watcher="" data-fls-watcher-once="" class="blockhead__text text text--18">
 								<p>
 									Мечтаете о новом или подержанном автомобиле? Наш автокредит поможет вам сесть за руль желаемой
@@ -344,10 +346,10 @@
 							</div>
 						</div>
 						<div data-fls-blockhead="" class="type-popup__blockhead blockhead">
-							<h1 data-fls-watcher="" data-fls-watcher-once="" class="blockhead__title blockhead__title--fire blockhead__title--32">
+							<h4 data-fls-watcher="" data-fls-watcher-once="" class="blockhead__title blockhead__title--fire blockhead__title--32">
 								<span>Рефинансирование</span>
 								— объедините долги и экономьте
-							</h1>
+							</h4>
 							<div data-fls-watcher="" data-fls-watcher-once="" class="blockhead__text text text--18">
 								<p>
 									Чувствуете, что кредиты тянут вас вниз? Кредит на рефинансирование от CreditMatch — это умный
@@ -494,10 +496,10 @@
 					</div>
 					<div class="career-popup__body">
 						<div data-fls-blockhead="" class="career-popup__blockhead blockhead">
-							<h1 data-fls-watcher="" data-fls-watcher-once="" class="blockhead__title blockhead__title--fire blockhead__title--32">
+							<h4 data-fls-watcher="" data-fls-watcher-once="" class="blockhead__title blockhead__title--fire blockhead__title--32">
 								<span>Мы оздаём технологию,</span>
 								которая меняет правила игры
-							</h1>
+							</h4>
 							<div data-fls-watcher="" data-fls-watcher-once="" class="blockhead__text text text--18">
 								<p>
 									Мы не просто выдаём кредиты. Мы строим интеллектуальную платформу, которая делает финансирование
@@ -512,16 +514,17 @@
 							<li class="career-popup__item-list">Профессиональное развитие: конференции, курсы, корпоративная библиотека.</li>
 							<li class="career-popup__item-list">Молодую, энергичную команду и атмосферу, в которой хочется творить.</li>
 						</ol>
-						<form data-fls-form="" action="#" class="career-popup__form form">
-							<select name="form[]" data-fls-select="" data-fls-select-modif="form">
+						<form data-fls-form="" action="https://api.web3forms.com/submit" method="POST" class="career-popup__form form">
+							<input type="hidden" name="access_key" value="">
+							<select name="goal" data-fls-select="" data-fls-select-modif="form" required>
 								<option value="" selected>Цель кредита</option>
-								<option value="1">Потребительский</option>
-								<option value="2">Авто</option>
-								<option value="3">Рефинансирование</option>
+								<option value="Потребительский">Потребительский</option>
+								<option value="Авто">Авто</option>
+								<option value="Рефинансирование">Рефинансирование</option>
 							</select>
 							<input data-fls-input="" required autocomplete="off" type="name" name="name" data-error="Error" placeholder="ФИО" class="form__input input">
 							<input data-fls-input="" required autocomplete="off" type="text" name="number" data-error="Error" placeholder="Желаемую сумму" class="form__input input">
-							<input data-fls-input="" data-fls-input-mask="+375-99-9999999" required autocomplete="off" type="tel" name="tel" data-error="Error" placeholder="Номер телефона" class="form__input input">
+							<input data-fls-input="" required data-fls-input-mask="+375-99-9999999" autocomplete="off" type="tel" name="tel" data-error="Error" placeholder="Номер телефона" class="form__input input">
 							<button data-fls-button="" type="submit" class="form__button button button--fw">
 								<span>Оформить</span>
 							</button>
@@ -544,10 +547,10 @@
 						</button>
 					</div>
 					<div data-fls-blockhead="" class="condition-popup__blockhead blockhead">
-						<h1 data-fls-watcher="" data-fls-watcher-once="" class="blockhead__title blockhead__title--fire blockhead__title--32">
+						<h4 data-fls-watcher="" data-fls-watcher-once="" class="blockhead__title blockhead__title--fire blockhead__title--32">
 							Условия использования сервиса
 							<span>CreditMatch</span>
-						</h1>
+						</h4>
 						<div data-fls-watcher="" data-fls-watcher-once="" class="blockhead__text text text--18">
 							<p>
 								Условия предоставления услуг: Сервис предоставляется "как есть". Мы не гарантируем одобрение кредита
@@ -614,12 +617,12 @@
 				</div>
 			</div>
 		</div>
-		<!-- Send Form -->
-		<div data-fls-popup="send-form" aria-hidden="true" class="popup">
+		<!-- Cookie -->
+		<div data-fls-popup="cookie" aria-hidden="true" class="popup">
 			<div data-fls-popup-wrapper="" class="popup__wrapper">
-				<div data-fls-popup-body="" class="popup__body send-popup">
+				<div data-fls-popup-body="" class="popup__body cookie-popup">
 					<div data-fls-popup-head="" class="popup__head">
-						<h2 data-fls-popup-title="" class="popup__title">Форма отправки</h2>
+						<h2 data-fls-popup-title="" class="popup__title">Cookie-Файлы</h2>
 						<button data-fls-popup-close="" type="button" class="popup__close">
 							<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#fff" stroke-linecap="square"></path>
@@ -627,7 +630,45 @@
 							</svg>
 						</button>
 					</div>
-					<div class="send-popup__title">Заявка успешно отправлена</div>
+					<div class="cookie-popup__body">
+						<div data-fls-blockhead="" class="cookie-popup__blockhead blockhead">
+							<h4 data-fls-watcher="" data-fls-watcher-once="" class="blockhead__title blockhead__title--fire blockhead__title--32">
+								Какие
+								<span>cookie</span>
+								мы используем?
+							</h4>
+							<div data-fls-watcher="" data-fls-watcher-once="" class="blockhead__text text text--18">
+								<p>
+									Мы используем файлы cookie и аналогичные технологии для обеспечения корректной работы нашего
+							веб-сайта, анализа трафика и персонализации рекламных предложений.Что такое cookie? Это небольшие
+							текстовые файлы, которые сохраняются на вашем устройстве при посещении сайта.
+								</p>
+							</div>
+						</div>
+						<ul class="cookie-popup__list">
+							<li class="cookie-popup__item">
+								<span>Необходимые:</span>
+								Обеспечивают работу основных функций сайта. Без них сайт не будет работать
+						корректно.
+							</li>
+							<li class="cookie-popup__item">
+								<span>Аналитические:</span>
+								Помогают нам понять, как пользователи взаимодействуют с сайтом (например,
+						с
+						помощью Google Analytics). Это позволяет улучшать наш сервис.
+							</li>
+							<li class="cookie-popup__item">
+								<span>Функциональные:</span>
+								Запоминают ваши предпочтения (например, язык), чтобы сделать ваше
+						взаимодействие с сайтом более удобным.
+							</li>
+							<li class="cookie-popup__item">
+								<span>Управление cookie:</span>
+								Вы можете управлять использованием cookie через настройки вашего
+						браузера. Помните, что отключение некоторых типов cookie может повлиять на функциональность сайта.
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
