@@ -5,8 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/logo.svg">
 		<title>CreditMatch</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1763407937052"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1763407937052">
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1763448265882"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1763448265882">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -46,10 +46,10 @@
 								</div>
 							</div>
 							<div data-fls-watcher="" data-fls-watcher-once="" class="aside-hero__actions">
-								<a href="" data-fls-button="" class="aside-hero__button button button--icon-arrow">
+								<button type="button" data-fls-popup-link="send" data-fls-button="" class="aside-hero__button button button--icon-arrow">
 									<span>Подать заявку сейчас</span>
-								</a>
-								<a href="" data-fls-button="" class="aside-hero__button button button--border">Дополнительно</a>
+								</button>
+								<a href="" data-fls-button="" data-fls-scrollto=".work" data-fls-scrollto-header="" class="aside-hero__button button button--border">Дополнительно</a>
 							</div>
 							<div data-fls-watcher="" data-fls-watcher-once="" class="aside-hero__items">
 								<div class="aside-hero__item">
@@ -76,7 +76,7 @@
 									</div>
 								</div>
 								<form data-fls-form="" action="https://api.web3forms.com/submit" method="POST" class="stat-hero__form form">
-									<input type="hidden" name="access_key" value="">
+									<input type="hidden" name="access_key" value="077bb9a7-aa6a-4228-9174-9acb30491e38">
 									<select name="goal" data-fls-select="" data-fls-select-modif="form" required>
 										<option value="" selected>Цель кредита</option>
 										<option value="Потребительский">Потребительский</option>
@@ -514,21 +514,13 @@
 							<li class="career-popup__item-list">Профессиональное развитие: конференции, курсы, корпоративная библиотека.</li>
 							<li class="career-popup__item-list">Молодую, энергичную команду и атмосферу, в которой хочется творить.</li>
 						</ol>
-						<form data-fls-form="" action="https://api.web3forms.com/submit" method="POST" class="career-popup__form form">
-							<input type="hidden" name="access_key" value="">
-							<select name="goal" data-fls-select="" data-fls-select-modif="form" required>
-								<option value="" selected>Цель кредита</option>
-								<option value="Потребительский">Потребительский</option>
-								<option value="Авто">Авто</option>
-								<option value="Рефинансирование">Рефинансирование</option>
-							</select>
-							<input data-fls-input="" required autocomplete="off" type="name" name="name" data-error="Error" placeholder="ФИО" class="form__input input">
-							<input data-fls-input="" required autocomplete="off" type="text" name="number" data-error="Error" placeholder="Желаемую сумму" class="form__input input">
-							<input data-fls-input="" required data-fls-input-mask="+375-99-9999999" autocomplete="off" type="tel" name="tel" data-error="Error" placeholder="Номер телефона" class="form__input input">
-							<button data-fls-button="" type="submit" class="form__button button button--fw">
-								<span>Оформить</span>
-							</button>
-						</form>
+						<div class="career-popup__text text text--20">
+							<p>
+								Расскажите нам, на какую должность вы претендуете и почему вы рады присоединиться к Creditmatch.
+						Отправьте своё резюме и портфолио в наш отдел кадров по адресу
+								<a href="mailto:hr@creditmatch.by">hr@creditmatch.by</a>
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -669,6 +661,45 @@
 							</li>
 						</ul>
 					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Send -->
+		<div data-fls-popup="send" aria-hidden="true" class="popup">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body send-popup">
+					<div data-fls-blockhead="" class="send-popup__blockhead blockhead">
+						<h4 data-fls-watcher="" data-fls-watcher-once="" class="blockhead__title blockhead__title--fire blockhead__title--32">
+							<span>Отправляйте</span>
+							нам заявку
+						</h4>
+						<div data-fls-watcher="" data-fls-watcher-once="" class="blockhead__text text">
+							<p>
+								Мы предлагаем гибкие условия и конкурентные ставки, чтобы вы могли реализовать задуманное
+						без лишних хлопот и долгого ожидания. Подайте заявку онлайн и узнайте решение за несколько минут.
+							</p>
+						</div>
+					</div>
+					<form data-fls-form="" action="https://api.web3forms.com/submit" method="POST" class="send-popup__form form">
+						<input type="hidden" name="access_key" value="077bb9a7-aa6a-4228-9174-9acb30491e38">
+						<select name="goal" data-fls-select="" data-fls-select-modif="form" required>
+							<option value="" selected>Цель кредита</option>
+							<option value="Потребительский">Потребительский</option>
+							<option value="Авто">Авто</option>
+							<option value="Рефинансирование">Рефинансирование</option>
+						</select>
+						<input data-fls-input="" required autocomplete="off" type="name" name="name" data-error="Error" placeholder="ФИО" class="form__input input">
+						<input data-fls-input="" required autocomplete="off" type="text" name="number" data-error="Error" placeholder="Желаемую сумму" class="form__input input">
+						<input data-fls-input="" required data-fls-input-mask="+375-99-9999999" autocomplete="off" type="tel" name="tel" data-error="Error" placeholder="Номер телефона" class="form__input input">
+						<div class="form__buttons">
+							<button data-fls-button="" type="submit" class="form__button button button--fw">
+								<span>Отправить</span>
+							</button>
+							<button data-fls-button="" data-fls-popup-close="" type="button" class="form__button button button--border button--fw">
+								<span>Закрыть</span>
+							</button>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
